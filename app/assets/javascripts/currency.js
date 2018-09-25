@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $('.from-text-box').on('input', function(){
     var fromSelected = $('.from-currency option:selected').val();
     var toSelected = $('.to-currency option:selected').val();
@@ -11,9 +12,8 @@ $(document).ready(function(){
     $.ajax({url: urlString, success: function(result){
       var convertedCurrency = parseFloat(result["rates"][""+toSelected]);
       var toCurrncy = parseFloat($('.from-text-box').val());
-      console.log(convertedCurrency);
-      $('.to-text-box').val(convertedCurrency * toCurrncy);
-      console.log(result);
+        $('.to-text-box').val(convertedCurrency * toCurrncy);
     }});
   });
+
 });
