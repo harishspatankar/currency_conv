@@ -3,23 +3,35 @@
   <title>Currency Convertor</title>
 </head>
 <body>
-  <div>
-  <select>
-    <option>USD</option>
-    <option>INR</option>
-  </select>
-  <select>
-    <option>USD</option>
-    <option>INR</option>
-  </select>
-</div>
-<div>
-  <label>To</label>
-  <input type='text' name='to_currnecy' class='to-text-box'>
-</div>
-<div>
-  <label>From</label>
-  <input type='text' name='from_currnecy' class='from-text-box'>
-</div>
+  <table border='1'>
+    <tr>
+      <td>
+        <select name='from-currency-select' class='from-currency'>
+          <option>USD</option>
+          <option>INR</option>
+          <option>EUR</option>
+          <option>GBP</option>
+        </select>
+      </td>
+      <td>
+        <select name='to-currency-select' class='to-currency'>
+          <option>USD</option>
+          <option>INR</option>
+          <option>EUR</option>
+          <option>GBP</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>From</label>
+        <input type='text' name='from_currnecy' class='from-text-box'>
+      </td>
+      <td>
+        <label>To</label>
+        <input type='text' name='to_currnecy' class='to-text-box'>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
